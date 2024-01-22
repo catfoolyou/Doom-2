@@ -160,7 +160,8 @@ am__DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/config.hin \
 	$(top_srcdir)/autotools/install-sh \
 	$(top_srcdir)/autotools/missing AUTHORS.md README.md \
 	autotools/ar-lib autotools/compile autotools/config.guess \
-	autotools/config.sub autotools/install-sh autotools/missing
+	autotools/config.sub autotools/depcomp autotools/install-sh \
+	autotools/missing
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 distdir = $(PACKAGE)-$(VERSION)
 top_distdir = $(distdir)
@@ -205,13 +206,13 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} '/workspace/doom/autotools/missing' aclocal-1.16
+ACLOCAL = ${SHELL} '/workspace/Doom-2/autotools/missing' aclocal-1.16
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = /home/linuxbrew/.linuxbrew/Cellar/emscripten/3.1.51/libexec/emar
-AUTOCONF = ${SHELL} '/workspace/doom/autotools/missing' autoconf
-AUTOHEADER = ${SHELL} '/workspace/doom/autotools/missing' autoheader
-AUTOMAKE = ${SHELL} '/workspace/doom/autotools/missing' automake-1.16
+AUTOCONF = ${SHELL} '/workspace/Doom-2/autotools/missing' autoconf
+AUTOHEADER = ${SHELL} '/workspace/Doom-2/autotools/missing' autoheader
+AUTOMAKE = ${SHELL} '/workspace/Doom-2/autotools/missing' automake-1.16
 AWK = gawk
 CC = /home/linuxbrew/.linuxbrew/Cellar/emscripten/3.1.51/libexec/emcc
 CCDEPMODE = depmode=gcc3
@@ -237,7 +238,7 @@ LDFLAGS =     -gsource-map -s INVOKE_RUN=1 -s USE_SDL=2 -s USE_SDL_MIXER=2 -s LE
 LIBOBJS = 
 LIBS = -lm 
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} '/workspace/doom/autotools/missing' makeinfo
+MAKEINFO = ${SHELL} '/workspace/Doom-2/autotools/missing' makeinfo
 MKDIR_P = /usr/bin/mkdir -p
 OBJDUMP = objdump
 OBJEXT = o
@@ -277,10 +278,10 @@ STRIP = strip
 VERSION = 0.0.1
 WINDOWS_RC_VERSION = 0, 0, 1, 0
 WINDRES = 
-abs_builddir = /workspace/doom
-abs_srcdir = /workspace/doom
-abs_top_builddir = /workspace/doom
-abs_top_srcdir = /workspace/doom
+abs_builddir = /workspace/Doom-2
+abs_srcdir = /workspace/Doom-2
+abs_top_builddir = /workspace/Doom-2
+abs_top_srcdir = /workspace/Doom-2
 ac_aux_dir = ./autotools/
 ac_ct_AR = 
 ac_ct_CC = 
@@ -309,7 +310,7 @@ host_vendor = none
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /workspace/doom/autotools/install-sh
+install_sh = ${SHELL} /workspace/Doom-2/autotools/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
